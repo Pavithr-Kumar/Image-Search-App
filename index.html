@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Images</title>
+    <link rel="stylesheet" href="imagesearch.css">
+</head>
+<body>
+     <div class="main">
+        <div class="head">
+            <h1>Image Search App</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Search for images" id="search">
+                <button id="search-btn">Search</button>
+            </div>
+            <p class="active" id="active">Sorry that images  are not available. Search for Others</p>
+        </div>
+        <div class="container" id="container">
+            
+            
+        </div>
+
+        <button id="show-btn">Show more</button>
+
+     </div>
+     <template id="card-template">
+        <div class="card" id="card">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1661956602944-249bcd04b63f" id="card-img" alt="">
+            </div>
+            <div class="card-content">
+                <p id="card-desc">Mountains under the sky</p>
+               
+            </div>
+        </div>
+     </template>
+
+
+
+
+
+    <script src="imagesearch.js"></script>
+</body>
+</html>

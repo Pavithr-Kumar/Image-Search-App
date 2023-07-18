@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    text-align: center;
+}
+
+.head{
+    text-align: center;
+    padding: 20px;
+}
+.search-container{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.search-container>input{
+    padding: 7px 15px;
+    flex-basis: 20%;
+    font-size: 15px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px lightgray;
+    border-radius: 5px;
+    outline: none;
+}
+.search-container>button{
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 7px 15px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 1px 1px 4px lightgray;
+    background: linear-gradient(25deg,rgb(10, 226, 234),rgb(80, 96, 232),rgb(66, 92, 164));
+}
+.search-container>button:hover{
+
+box-shadow: 4px 4px 4px lightgray;
+}
+.search-container>button:active{
+    transform: scale(1.05);
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+  width: 85%;
+   
+    display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 25px;
+}
+.card{
+    overflow: hidden; 
+    /* border: 1px solid lightgray; */
+    border-radius: 5px;
+    cursor: pointer;
+   width: 100%;
+}
+.card-image>img{
+    width: 100%;
+   max-height: 270px;
+    object-fit: cover;
+    
+    transition: opacity 0.3s ease;
+
+}
+.card-content{
+    padding: 10px;
+    text-align: left;
+}
+.card-content>a{
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.card:hover img{
+    opacity: 0.8;
+}
+
+#show-btn{
+    
+    margin: 80px 0px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 7px 15px;
+    font-size: 15px;
+    color: white;
+   margin-inline: auto;
+   display: none;
+    box-shadow: 1px 1px 4px lightgray;
+    background: linear-gradient(30deg,rgb(136, 89, 102),rgb(126, 75, 155),rgb(6, 121, 222));
+}
+#show-btn:hover{
+
+    box-shadow: 4px 4px 4px lightgray;
+    }
+    
+    #show-btn:active{
+        transform: scale(1.05);
+    }
+.active{
+    color: red;
+    display: none;
+}
+
